@@ -4,7 +4,7 @@ import pandas as pd
 
 # COMMAND ----------
 
-repository_path = "file:/Workspace/Users/giovanichequim@gmail.com/Heart Attack Analysis & Prediction/"
+repository_path = "file:/Workspace/Repos/giovanichequim@gmail.com/Mastercloud-Trilha-03-Onda-2/src/azure_databricks/Machine Learning/Heart Attack Analysis & Prediction/"
 data_path = repository_path + "data/"
 
 # COMMAND ----------
@@ -80,7 +80,3 @@ silver_df = spark.read.parquet(data_path+"silver/heart")
 # COMMAND ----------
 
 silver_df.write.parquet(data_path+"gold/heart", mode="overwrite")
-
-# COMMAND ----------
-
-
